@@ -1,4 +1,5 @@
 const lightTheme = {
+    text: "#000",
     primary: '#F5821F',
     secondary: '#f37e52',
     tertiary: '#FAA61A',
@@ -12,6 +13,7 @@ const lightTheme = {
 }
 
 const darkTheme = {
+    text: "#fff",
     primary: '#222831',
     secondary: '#393e46',
     tertiary: '#d65a31',

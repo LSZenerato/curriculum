@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Next JS",
+        "logo": "./src/images/next_logo.png"
+    },
+    {
+        "title": "React JS",
+        "logo": "./src/images/react_logo.png"
+    },
+    {
+        "title": "Typescript",
+        "logo": "./src/images/typescript.png"
+    },
+    {
+        "title": "Progressive Web App",
+        "logo": "./src/images/pwa.png"
+    }
+]

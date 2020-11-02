@@ -1,4 +1,4 @@
 import FirstSection from './FirstSection';
-import SecondSection from './SecondSection';
+import Technologies from './Technologies';
 
-export { FirstSection, SecondSection }
+export { FirstSection, Technologies }
