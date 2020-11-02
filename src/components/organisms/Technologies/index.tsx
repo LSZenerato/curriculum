@@ -59,8 +59,8 @@ const Technologies: React.FC<Props> = ({ animation }) => {
         <h1>Technologies</h1>
         <div className="img_tech_div">
           {
-            List.map(value => {
-              return <div className="img_tech_round_div">
+            List.map((value, index) => {
+              return <div key={value.title + index} className="img_tech_round_div">
                 <img className="img_tech" src={value.logo} alt={value.title} />
               </div>
             })

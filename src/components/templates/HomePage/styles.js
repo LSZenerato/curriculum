@@ -1,28 +1,9 @@
 import styled, { keyframes } from "styled-components"
 
-const slideDown = keyframes`
-    from {
-        /* top: -100vh; */
-        opacity: 0;
-    } 
-    to {
-        /* top: 0; */
-        opacity: 1;
-    }
-`
-const slideUp = keyframes`
-    from {
-        /* top: 0; */
-        opacity: 1;
-    } 
-    to {
-        /* top: -100vh; */
-        opacity: 0;
-    }
-`
-
 export const Container = styled.div`
-    background-color: green;
+    background-color: ${props => props.theme.primary};
+    overflow: hidden;
+    height: 100vh;
 
     .controll-btn-div {
         width: 100%;
@@ -39,14 +20,24 @@ export const Container = styled.div`
             margin: 0 20px;
         }
     }
-    
-    .slideDown {
-        position: relative;
-        animation: ${slideDown} 0.7s;
-    }
 
-    .slideUp {
-        position: relative;
-        animation: ${slideUp} 0.7s;
+    .slide-enter {
+        opacity: 0;
+        transition: opacity .5s ease;
+    }
+      
+    .slide-enter-active {
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
+      
+    .slide-exit {
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
+      
+    .slide-exit-active {
+        opacity: 0;
+        transition: opacity .5s ease;
     }
 `;
