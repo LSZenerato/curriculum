@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Menu } from '../../organisms';
 import { Container } from './styles';
 
-function MyPage({ menuProps }) {
+interface Props {
+  menuProps: any
+}
+
+const MyPage: React.FC<Props> = ({ menuProps }) => {
   
   function backgroundEffect() {
     const circleNumber = 10;
@@ -16,8 +20,8 @@ function MyPage({ menuProps }) {
     }
 
     return (
-      <div class="area" >
-        <ul class="circles">
+      <div className="area" >
+        <ul className="circles">
           {liGenerator()}
         </ul>
       </div >

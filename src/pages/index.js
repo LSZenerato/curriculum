@@ -8,20 +8,20 @@ import { changeThemeLight } from '../store/theme/actions';
 
 const menuItems = [
   {
-    "title": "Quem sou eu?",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+    title: "Quem sou eu?",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
   },
   {
-    "title": "Onde já trabalhei?",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+    title: "Onde já trabalhei?",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
   },
   {
-    "title": "Veja mais",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+    title: "Veja mais",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
   },
   {
-    "title": "Fale comigo",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+    title: "Fale comigo",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
   },
 ];
 
@@ -32,18 +32,16 @@ const menuData = {
 }
 
 export default function Home() {
+  const dispatch = useDispatch();
   const themeLightUp = useSelector(state => state.theme.light);
   const theme = themeLightUp ? themes.lightTheme : themes.darkTheme;
 
-  const dispatch = useDispatch();
-  const changeTheme = () => {
-    dispatch(changeThemeLight(!themeLightUp));
-  }
+  const changeTheme = () => dispatch(changeThemeLight(!themeLightUp));
 
   const menuProps = {
-    changeTheme,
     menuItems,
-    menuData
+    menuData,
+    changeTheme
   }
 
   return <ThemeProvider theme={theme}>
