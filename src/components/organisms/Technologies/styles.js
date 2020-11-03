@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components"
 export const Container = styled.div`
     width: 100%;
     padding: 100px 0px;
+    height: 100vh;
     background-color: ${props => props.theme.secondary};
     color: ${props => props.theme.text};
     display: flex;

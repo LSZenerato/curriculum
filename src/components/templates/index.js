@@ -1,3 +1,2 @@
-import HomePage from './HomePage';
-
-export { HomePage }
+export { default as HomePage } from './HomePage';
+export { default as MyPage } from './MyPage';

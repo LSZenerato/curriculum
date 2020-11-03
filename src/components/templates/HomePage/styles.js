@@ -2,8 +2,6 @@ import styled, { keyframes } from "styled-components"
 
 export const Container = styled.div`
     background-color: ${props => props.theme.primary};
-    overflow: hidden;
-    height: 100vh;
 
     .controll-btn-div {
         width: 100%;

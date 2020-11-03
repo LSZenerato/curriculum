@@ -1,23 +1,29 @@
-const lightTheme = {
-    text: "#000",
-    primary: '#F5821F',
-    secondary: '#f37e52',
-    tertiary: '#FAA61A',
-    quaternary: '#F05A22',
+const darkTheme = {
+    primary: '#fdc500',
+    secondary: '#00296b',
+    tertiary: '#131515',
+    quaternary: '#2b2c27',
+    primaryText: "#000",
+    secondaryText: "#fff",
+    tertiaryText: "#fff",
+    quaternaryText: '#fff',
     status: {
-        success: '#fff',
-        error: '#fff',
-        warning: '#fff',
-        information: '#fff'
+        success: '#00ff00',
+        error: '#ff0000',
+        warning: '#ffcc00',
+        information: '#0000ff'
     }
 }
 
-const darkTheme = {
-    text: "#fff",
-    primary: '#222831',
-    secondary: '#393e46',
-    tertiary: '#d65a31',
-    quaternary: '#eeeeee',
+const lightTheme = {
+    primary: '#fdc500',
+    secondary: '#00509d',
+    tertiary: '#d3d3d3',
+    quaternary: '#bdbdbd',
+    primaryText: "#000",
+    secondaryText: "#fff",
+    tertiaryText: "#000",
+    quaternaryText: '#000',
     status: {
         success: '#00ff00',
         error: '#ff0000',
