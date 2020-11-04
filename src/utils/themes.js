@@ -1,35 +1,27 @@
-const darkTheme = {
-    primary: '#fdc500',
-    secondary: '#00296b',
-    tertiary: '#131515',
-    quaternary: '#2b2c27',
-    primaryText: "#000",
-    secondaryText: "#fff",
-    tertiaryText: "#fff",
-    quaternaryText: '#fff',
-    status: {
-        success: '#00ff00',
-        error: '#ff0000',
-        warning: '#ffcc00',
-        information: '#0000ff'
-    }
+const lightTheme = {
+    primary: '#d3d3d3',
+    secondary: '#3f3f3f',
+    tertiary: '#707070',
+    quaternary: '#ffd700',
+    quintenary: '#ffed00',
+    primaryTxt: '#000',
+    secondaryTxt: '#fff',
+    tertiaryTxt: '#000',
+    quaternaryTxt: '#000',
+    quintenaryTxt: '#000',
 }
 
-const lightTheme = {
-    primary: '#fdc500',
-    secondary: '#00509d',
-    tertiary: '#d3d3d3',
-    quaternary: '#bdbdbd',
-    primaryText: "#000",
-    secondaryText: "#fff",
-    tertiaryText: "#000",
-    quaternaryText: '#000',
-    status: {
-        success: '#00ff00',
-        error: '#ff0000',
-        warning: '#ffcc00',
-        information: '#0000ff'
-    }
+const darkTheme = {
+    primary: '#202020',
+    secondary: '#3f3f3f',
+    tertiary: '#707070',
+    quaternary: '#ffd700',
+    quintenary: '#ffed00',
+    primaryTxt: '#fff',
+    secondaryTxt: '#fff',
+    tertiaryTxt: '#000',
+    quaternaryTxt: '#000',
+    quintenaryTxt: '#000',
 }
   
 export default { lightTheme, darkTheme };

@@ -8,6 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: right;
     align-items: flex-end;
+    color: ${props => props.theme.primaryTxt};
 
     // desktop 
     @media ${breakpoints.mobile} {
@@ -22,6 +23,7 @@ export const Container = styled.div`
 
         span {
             margin: 0;
+            color: ${props => props.theme.quaternary};
         }
     }
 

@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#nprogress .bar {
+  background: rgb(250, 225, 0) !important;
+}

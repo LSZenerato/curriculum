@@ -9,7 +9,7 @@ interface Props {
 const MyPage: React.FC<Props> = ({ menuProps }) => {
   
   function backgroundEffect() {
-    const circleNumber = 10;
+    const circleNumber = 20;
     const elements = [];
 
     const liGenerator = () => {

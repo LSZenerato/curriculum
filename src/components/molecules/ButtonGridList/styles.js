@@ -15,10 +15,10 @@ const bounce = keyframes`
 export const Container = styled.div`
     width: 100%;
     margin: 0;
-    grid-row-gap: 30px;
-    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
     display: grid;
-    justify-content: space-around;
+    justify-content: space-evenly;
     grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
 
     .img_menu_round_div {
@@ -31,8 +31,8 @@ export const Container = styled.div`
         height: 200px;
         padding: 40px;
         border-radius: 50%;
-        background-color: ${props => props.theme.secondary};
-        color: ${props => props.theme.secondaryText};           
+        background-color: ${props => props.theme.quaternary};
+        color: ${props => props.theme.quaternaryTxt};           
 
         -webkit-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
@@ -47,8 +47,8 @@ export const Container = styled.div`
             -moz-animation: ${bounce} 3s infinite;
             -o-animation: ${bounce} 3s infinite;
 
-            background-color: ${props => props.theme.primary};
-            color: ${props => props.theme.primaryText};
+            background-color: ${props => props.theme.quintenary};
+            color: ${props => props.theme.quintenaryTxt};
         }
 
         .img_tech {

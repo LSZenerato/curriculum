@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
+import { useRouter } from 'next/router';
 
 interface Props {
     changeTheme: () => void,
@@ -13,9 +14,10 @@ interface IData {
 }
 
 const Header: React.FC<Props> = ({ changeTheme, menuData }) => {
+    const router = useRouter();
     return (
         <Container>
-            <button onClick={() => changeTheme()}> Apagar a luz </button>
+            <button onClick={() => router.push("/page")}> Apagar a luz </button>
             <h1 className="title">
                 {menuData.text_1} <span>{menuData.text_2}</span>
             </h1>
