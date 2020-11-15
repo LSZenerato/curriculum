@@ -9,7 +9,7 @@ interface Props {
 const MyPage: React.FC<Props> = ({ menuProps }) => {
   
   function backgroundEffect() {
-    const circleNumber = 20;
+    const circleNumber = 0;
     const elements = [];
 
     const liGenerator = () => {
@@ -30,7 +30,6 @@ const MyPage: React.FC<Props> = ({ menuProps }) => {
 
   return <Container>
     <Menu menuProps={menuProps} />
-    {backgroundEffect()}
   </Container>
 }
 

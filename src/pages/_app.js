@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import Router from 'next/router';
+import Layout from '../utils/Layout/index.jsx';
 
 //Binding events. 
 Router.events.on('routeChangeStart', () => NProgress.start()); 
@@ -15,7 +16,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Provider>
   );
 }

@@ -12,8 +12,8 @@ const Menu: React.FC<Props> = ({ menuProps }) => {
   return (
     <div>
       <Container>
-        <Header menuData={menuData} changeTheme={changeTheme} />
         <ButtonGridList menuItems={menuItems} />
+        <Header menuData={menuData} changeTheme={changeTheme} />
       </Container>
     </div>
   );

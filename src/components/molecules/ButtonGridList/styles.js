@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components"
+import { breakpoints } from '../../../utils';
 
 const bounce = keyframes`
     0%, 10%, 40%, 80%, 100% {
@@ -14,12 +15,25 @@ const bounce = keyframes`
 
 export const Container = styled.div`
     width: 100%;
-    margin: 0;
-    grid-row-gap: 50px;
-    grid-column-gap: 50px;
+    margin: 50px 0;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
     display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+
+    // desktop 
+    @media ${breakpoints.mobile} {
+        width: 70%;
+    } 
+    .item_div {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
 
     .img_menu_round_div {
         display: flex;
@@ -27,16 +41,18 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
 
-        width: 200px;
-        height: 200px;
-        padding: 40px;
-        border-radius: 50%;
-        background-color: ${props => props.theme.quaternary};
-        color: ${props => props.theme.quaternaryTxt};           
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; 
 
         -webkit-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
         box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
 
         :hover {
             cursor: pointer;
@@ -46,13 +62,9 @@ export const Container = styled.div`
             -webkit-animation: ${bounce} 3s infinite;
             -moz-animation: ${bounce} 3s infinite;
             -o-animation: ${bounce} 3s infinite;
-
+            transition-duration: 5s;
             background-color: ${props => props.theme.quintenary};
             color: ${props => props.theme.quintenaryTxt};
-        }
-
-        .img_tech {
-            width: 100%;
         }
     } 
 `;
