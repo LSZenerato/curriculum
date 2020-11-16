@@ -1,17 +1,13 @@
 import React from 'react';
-import { Title, Text, Button } from '../../atoms';
+import { TitleDesc } from '../../molecules';
 import { Container } from './styles';
 
 function FirstSection({ props }) {
-    const { imgProps, titleProps, textProps, buttonProps } = props;
+    const { imgProps, titleProps, textProps } = props;
 
     return <Container>
         <img src={imgProps.src} alt={imgProps.alt} />
-        <div className="outside-div">
-            <Title>{titleProps.children}</Title>
-            <Text>{textProps.children}</Text>
-            <Button className={buttonProps.className} onClick={() => buttonProps.onClick()} >{buttonProps.children}</Button>
-        </div>
+        <TitleDesc title={titleProps.children} desc={textProps.children} />
     </Container>;
 }
 

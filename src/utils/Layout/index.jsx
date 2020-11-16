@@ -10,14 +10,28 @@ import { FaArrowDown } from 'react-icons/fa';
 function Layout({children}) {
     const router = useRouter();
     const themeLightUp = useSelector(state => state.theme.light);
-    const theme = themeLightUp ? themes.lightTheme : themes.darkTheme;
+    const theme = !themeLightUp ? themes.darkTheme : themes.lightTheme;
+
+    function changeRoute() {
+        switch (router.pathname) {
+            case '/quemSouEu':
+                router.push('/tecnicas');
+                break;
+            case '/tecnicas':
+                router.push('/quemSouEu');
+                break;
+        
+            default:
+                break;
+        }
+    }
 
     return <ThemeProvider theme={theme}>
         <Container>
             <Transition location={router.pathname}>
                 {children}
             </Transition>
-            {/* <button className="next_button" onClick={() => changeRoute()}><FaArrowDown /></button> */}
+            <button className="next_button" onClick={() => changeRoute()}><FaArrowDown /></button>
         </Container>
     </ThemeProvider>
 }

@@ -1,18 +1,13 @@
 import React from 'react';
-import { Title, Text, Button } from '../../atoms';
-import { ButtonGridList } from '../../molecules';
+import { ButtonGridList, TitleDesc } from '../../molecules';
 import { Container } from './styles';
 
 function SecondSection({ props }) {
-    const { titleProps, textProps, buttonProps, tecList } = props;
+    const { titleProps, textProps, tecList } = props;
 
     return <Container>
-        <div className="outside-div">
-            <Title>{titleProps.children}</Title>
-            <Text>{textProps.children}</Text>
-        </div>
+        <TitleDesc title={titleProps.children} desc={textProps.children} />
         <ButtonGridList menuItems={tecList} />
-        <Button className='next_button' onClick={() => buttonProps.onClick()} >{buttonProps.children}</Button>
     </Container>;
 }
 

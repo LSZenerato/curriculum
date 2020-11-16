@@ -1,9 +1,18 @@
 import { QuemSouEu } from '../../components/templates';
-import { Container } from './styles';
 import { FaArrowDown } from 'react-icons/fa';
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
-export default function Home() {
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+
+export default function QuemSouEuPage() {
   const router = useRouter();
 
   const FirstSectionProps = {
@@ -16,11 +25,6 @@ export default function Home() {
     },
     textProps:{
       children: 'Analista desenvolvedor de sistemas'
-    },
-    buttonProps: {
-      children: <FaArrowDown />,
-      onClick: () => router.push('/tecnicas'),
-      className: 'next_button'
     }
   }
 

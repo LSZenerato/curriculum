@@ -17,14 +17,14 @@ export const Container = styled.div`
     width: 100%;
     margin: 50px 0;
     grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    grid-column-gap: 50px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
 
     // desktop 
     @media ${breakpoints.mobile} {
-        width: 70%;
+        width: 90%;
     } 
     .item_div {
         display: flex;

@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
-        <title> teste </title>
+        <title> Lucas Sacomani Zenerato </title>
         <Head>
           <meta charSet="utf-8" />
           <meta name='application-name' content='PWA App' />

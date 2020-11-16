@@ -1,7 +1,16 @@
 import { Tecnicas } from '../../components/templates';
-import { Container } from './styles';
 import { FaArrowDown } from 'react-icons/fa';
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default function TecnicasPage() {
   const router = useRouter();
@@ -13,15 +22,10 @@ export default function TecnicasPage() {
     textProps:{
       children: 'Este site foi desenvolvido utilizando as tecnicas e tecnologias abaixo listadas'
     },
-    buttonProps: {
-      children: <FaArrowDown />,
-      onClick: () => router.push('/quemSouEu'),
-      className: 'next_button'
-    },
     tecList: [
       {
         title: 'Next Js',
-        logo: '/src/images/next_logo.png',
+        logo: '/public/images/next_logo.png',
         onClick: () => alert('alow')
       },
       {
