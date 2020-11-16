@@ -18,7 +18,8 @@ export const Container = styled.div`
         margin: 10px 0;
         position: fixed;
         bottom: 10px;
-        right: 47%;
+        left: 50%;
+        transform: translate(-50%, 0);
 
         .icon {
         font-size: 1.5rem;

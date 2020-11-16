@@ -7,13 +7,13 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 
   img {
-    height: 250px;
-    width: 250px;
+    min-height: 150px;
+    min-width: 150px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 0 10px;
   }
 
   .outside-div {
@@ -29,6 +29,13 @@ export const Container = styled.div`
   // desktop 
   @media ${breakpoints.mobile} {
     flex-direction: row;
+    width: 90%;
+
+    img {
+      min-height: 200px;
+      min-width: 200px;
+      margin: 20px;
+    }
     
     .outside-div {
       width: 70%;

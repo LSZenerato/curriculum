@@ -14,7 +14,7 @@ module.exports = withOffline({
         : 'static/service-worker.js',
       runtimeCaching: [
         {
-          urlPattern: /^https?.*/,
+          urlPattern: /^http?.*/,
           handler: 'NetworkFirst',
           options: {
             cacheName: 'offlineCache',
