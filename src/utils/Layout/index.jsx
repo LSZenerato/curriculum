@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from './styles';
 import { ThemeProvider } from 'styled-components';
 import { themes } from '../../utils';

@@ -1,38 +1,43 @@
 import { TransitionGroup, Transition as ReactTransition } from "react-transition-group";
 import { Container } from './styles';
 
-  const TIMEOUT = 500
+const Transition = ({ children, location }) => {
+  const TIMEOUT = 900
   const getTransitionStyles = {
     entering: {
       position: `absolute`,
-      transform: `translateY(100vh)`,
+      opacity: 0,
+      //transform: `translateY(100vh)`
     },
     entered: {
-      transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
-      transform: `translateY(0px)`,
+      transition: `opacity ${TIMEOUT}ms ease-in-out`,
+      // transition: `transform ${TIMEOUT}ms ease-in-out`,
+      opacity: 1,
+      //transform: `translateY(0px)`
     },
     exiting: {
-      transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
-      transform: `translateY(-100vh)`,
+      transition: `opacity ${TIMEOUT}ms ease-in-out`,
+      opacity: 0,
+      //transform: `translateY(-100vh)`
     },
   }
-  const Transition = ({ children, location }) => {
-    return (
-      <TransitionGroup style={{ position: "relative" }}>
-        <ReactTransition
-          key={location}
-          timeout={{ enter: TIMEOUT, exit: TIMEOUT }} >
-          {status => (
-            <div
-              style={{
-                ...getTransitionStyles[status],
-              }}
-            >
-              {children}
-            </div>
-          )}
-        </ReactTransition>
-      </TransitionGroup>
-    )
-  }
-  export default Transition
+
+  return (
+    <TransitionGroup style={{ position: "relative" }}>
+      <ReactTransition
+        key={location}
+        timeout={{ enter: TIMEOUT, exit: TIMEOUT }} >
+        {status => (
+          <div
+            style={{
+              ...getTransitionStyles[status],
+            }}
+          >
+            {children}
+          </div>
+        )}
+      </ReactTransition>
+    </TransitionGroup>
+  )
+}
+export default Transition
