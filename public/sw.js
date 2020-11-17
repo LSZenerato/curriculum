@@ -1,31 +1,37 @@
 
 const CACHE_NAME = "cache_v1";
-const urlsToCache = ["/", "/index.html", "/offline.html", "/static"];
+const urlsToCache = [
+  "/", 
+  "/index.html", 
+  "/offline.html",
+  "/static/pwa.png",
+  "/static/next_logo.png",
+  "/static/react_logo.png",
+  "/static/typescript.png",
+];
 
 self.addEventListener("install", function (event) {
   const preLoaded = caches.open(CACHE_NAME)
     .then(cache => cache.addAll(urlsToCache));
   event.waitUntil(preLoaded);
-  console.log('preLoaded', preLoaded);
 });
 
 this.addEventListener('fetch', function(event) {
   const response = caches.match(event.request)
     .then(match => match || fetch(event.request));
   event.respondWith(response);
-  console.log('response', response);
 });
 
-this.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['v2'];
-
+self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(function(keyList) {
-      return Promise.all(keyList.map(function(key) {
-        if (cacheWhitelist.indexOf(key) === -1) {
-          return caches.delete(key);
-        }
-      }));
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheName.startsWith('pages-cache-') && staticCacheName !== cacheName) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
     })
   );
 });
