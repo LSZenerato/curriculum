@@ -3,7 +3,7 @@ const urlsToCache = [
   "./",
   "./offline",
   "./index",
-  "./quemSouEu",
+  "./home",
   "./tecnicas",
   "./manifest.json",
   "./static/next_logo.webp",

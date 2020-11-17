@@ -14,11 +14,11 @@ function Layout({children}) {
 
     function changeRoute() {
         switch (router.pathname) {
-            case '/quemSouEu':
+            case '/':
                 router.push('/tecnicas');
                 break;
             case '/tecnicas':
-                router.push('/quemSouEu');
+                router.push('/');
                 break;
         
             default:
