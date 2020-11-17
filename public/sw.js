@@ -1,7 +1,12 @@
 
 const CACHE_NAME = "cache_v1";
 const urlsToCache = [
-  "./"
+  "./",
+  "./offline.html",
+  "./index.html",
+  "./quemSouEu",
+  "./tecnicas",
+  "./static"
 ];
 
 self.addEventListener("install", function (event) {
