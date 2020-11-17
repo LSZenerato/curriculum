@@ -1,5 +1,5 @@
+import { useEffect } from 'react';
 import { Tecnicas } from '../../components/templates';
-import { FaArrowDown } from 'react-icons/fa';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 
@@ -65,6 +65,14 @@ export default function TecnicasPage() {
       }
     ]
   }
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      (success) => console.log('sucesso', success),
+      (error) => console.log('error', error),
+      {enableHighAccuracy: true}
+    );
+  }, []);
 
   return <Container>
     <Tecnicas SecondSectionProps={SecondSectionProps} />
