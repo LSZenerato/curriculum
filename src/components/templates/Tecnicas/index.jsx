@@ -3,7 +3,7 @@ import { SecondSection } from '../../organisms';
 
 function Tecnicas({ SecondSectionProps }) {
 
-  return <SecondSection loading="lazy" props={SecondSectionProps} />
+  return <SecondSection props={SecondSectionProps} />
 }
 
 export default Tecnicas;
