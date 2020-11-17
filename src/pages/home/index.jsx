@@ -1,4 +1,4 @@
-import { QuemSouEu } from '../../components/templates';
+import { Home } from '../../components/templates';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -25,6 +25,6 @@ export default function QuemSouEuPage() {
   }
 
   return <Container>
-    <QuemSouEu FirstSectionProps={FirstSectionProps} />
+    <Home FirstSectionProps={FirstSectionProps} />
   </Container>
 }

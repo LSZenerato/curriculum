@@ -14,8 +14,8 @@ module.exports = {
         { dev, dir, outDir, distDir, buildId }
     ) {
         return {
-            '/': { page: '/quemSouEu' },
-            '/quemSouEu': { page: '/quemSouEu' },
+            '/': { page: '/home' },
+            '/home': { page: '/home' },
             '/tecnicas': { page: '/tecnicas' },
         }
     }
