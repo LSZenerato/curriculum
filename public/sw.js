@@ -6,6 +6,7 @@ const urlsToCache = [
   "./home",
   "./tecnicas",
   "./manifest.json",
+  "./static/avatar.webp",
   "./static/next_logo.webp",
   "./static/pwa.webp",
   "./static/react_logo.webp",
