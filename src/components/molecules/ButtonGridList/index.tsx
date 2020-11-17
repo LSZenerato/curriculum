@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import { Image, Button } from '../../atoms';
+import { Image, Button, Text } from '../../atoms';
 
 interface Props {
   menuItems: Array<IDataArray>
@@ -26,7 +26,7 @@ const ButtonGridList: React.FC<Props> = ({ menuItems }) => {
                   className="button_class">
                     <Image className="img_class" src={value.logo} alt={value.title}/>
                 </Button>
-                <h4>{value.title}</h4>
+                <Text className="h4_style" >{value.title}</Text>
               </div>
             })
           }

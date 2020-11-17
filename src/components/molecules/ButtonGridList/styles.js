@@ -25,7 +25,13 @@ export const Container = styled.div`
     // desktop 
     @media ${breakpoints.mobile} {
         width: 90%;
-    } 
+    }
+
+    .h4_style {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
     .item_div {
         display: flex;
         flex-direction: column;
