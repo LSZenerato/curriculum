@@ -5,7 +5,7 @@ const Text: React.FC<Props> = ({ children, ...props }) => {
   return <H2 {...props}> {children} </H2>;
 }
 
-interface Props extends React.HTMLProps<HTMLLabelElement> {
+interface Props extends React.HTMLProps<HTMLHeadingElement> {
     children: any
 }
 

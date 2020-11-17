@@ -22,24 +22,24 @@ export default function TecnicasPage() {
     tecList: [
       {
         title: 'Next Js',
-        logo: '/static/next_logo.png',
+        logo: '/static/next_logo.webp',
         onClick: () => alert('alow')
       },
       {
         title: 'PWA',
-        logo: '/static/pwa.png',
+        logo: '/static/pwa.webp',
         onClick: () => alert('alow')
       },
       {
         title: 'React Js',
-        logo: '/static/react_logo.png',
+        logo: '/static/react_logo.webp',
         onClick: () => alert('alow')
       },
       {
         title: 'Typescript',
-        logo: '/static/typescript.png',
+        logo: '/static/typescript.webp',
         onClick: () => alert('alow')
-      }
+      },
     ]
   }
 
