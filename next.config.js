@@ -9,5 +9,14 @@
 // })
 
 module.exports = {
-    /* config options here */
+    exportPathMap: async function (
+        defaultPathMap,
+        { dev, dir, outDir, distDir, buildId }
+    ) {
+        return {
+            '/': { page: '/quemSouEu' },
+            '/quemSouEu': { page: '/quemSouEu' },
+            '/tecnicas': { page: '/tecnicas' },
+        }
+    }
 }
