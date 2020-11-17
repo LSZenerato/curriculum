@@ -1,8 +1,8 @@
 import React from 'react';
-import { H3 } from './styles';
+import { H2 } from './styles';
 
 const Text: React.FC<Props> = ({ children }) => {
-  return <H3> {children} </H3>;
+  return <H2> {children} </H2>;
 }
 
 interface Props {

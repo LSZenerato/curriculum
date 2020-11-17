@@ -19,6 +19,7 @@ const ButtonGridList: React.FC<Props> = ({ menuItems }) => {
             menuItems.map((value, index) => {
               return <div className="item_div" key={index}>
                 <button 
+                  aria-label={value.title}
                   onClick={() => value.onClick()}
                   key={value.title + index} 
                   className="img_menu_round_div">

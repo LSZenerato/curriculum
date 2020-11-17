@@ -31,7 +31,7 @@ function Layout({children}) {
             <Transition location={router.pathname}>
                 {children}
             </Transition>
-            <button className="next_button" onClick={() => changeRoute()}><FaArrowDown /></button>
+            <button aria-label="Avançar" className="next_button" onClick={() => changeRoute()}><FaArrowDown /></button>
         </Container>
     </ThemeProvider>
 }

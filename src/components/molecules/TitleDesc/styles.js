@@ -7,8 +7,17 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: right;
+
+    .div_style {
+        height: 3px;
+        width: 40%;
+        background-color: ${props => props.theme.quaternary};
+        margin: 10px 0;
+        right: 0;
+        position: relative;
+    }
 
      // desktop 
     @media ${breakpoints.mobile} {
