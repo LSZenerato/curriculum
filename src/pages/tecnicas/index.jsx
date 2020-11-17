@@ -25,17 +25,17 @@ export default function TecnicasPage() {
     tecList: [
       {
         title: 'Next Js',
-        logo: '/public/images/next_logo.png',
+        logo: '/static/next_logo.png',
         onClick: () => alert('alow')
       },
       {
         title: 'React Js',
-        logo: 'https://media-exp1.licdn.com/dms/image/C4D03AQF1spmCFIqKCQ/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=-FBHP_dgSn_GguhjP-ad3JIq3abQe3FhYfx6cVvztFY',
+        logo: '/static/react_logo.png',
         onClick: () => alert('alow')
       },
       {
         title: 'Typescript',
-        logo: 'https://media-exp1.licdn.com/dms/image/C4D03AQF1spmCFIqKCQ/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=-FBHP_dgSn_GguhjP-ad3JIq3abQe3FhYfx6cVvztFY',
+        logo: '/static/typescript.png',
         onClick: () => alert('alow')
       },
       {
