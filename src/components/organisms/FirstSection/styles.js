@@ -10,8 +10,8 @@ export const Container = styled.div`
   align-items: flex-end;
 
   img {
-    min-height: 150px;
-    min-width: 150px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     margin: 0 10px;
   }
@@ -32,8 +32,8 @@ export const Container = styled.div`
     width: 90%;
 
     img {
-      min-height: 200px;
-      min-width: 200px;
+      height: 200px;
+      width: 200px;
       margin: 20px;
     }
     
