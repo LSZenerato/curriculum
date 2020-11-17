@@ -7,10 +7,10 @@ const urlsToCache = [
   "./quemSouEu",
   "./tecnicas",
   "./manifest",
-  "./static/next_logo.png",
-  "./static/pwa.png",
-  "./static/react_logo.png",
-  "./static/typescript.png",
+  "./static/next_logo",
+  "./static/pwa",
+  "./static/react_logo",
+  "./static/typescript",
 ];
 
 self.addEventListener("install", function (event) {
