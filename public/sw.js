@@ -5,8 +5,7 @@ const urlsToCache = [
   "./offline",
   "./index",
   "./quemSouEu",
-  "./tecnicas",
-  "./manifest"
+  "./tecnicas"
 ];
 
 self.addEventListener("install", function (event) {
