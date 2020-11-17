@@ -3,11 +3,7 @@ const CACHE_NAME = "cache_v1";
 const urlsToCache = [
   "/", 
   "/index.html", 
-  "/offline.html",
-  "/static/pwa.png",
-  "/static/next_logo.png",
-  "/static/react_logo.png",
-  "/static/typescript.png",
+  "/offline.html"
 ];
 
 self.addEventListener("install", function (event) {
