@@ -2,8 +2,8 @@
 const CACHE_NAME = "cache_v1";
 const urlsToCache = [
   "./",
-  "./offline.html",
-  "./index.html",
+  "./offline",
+  "./index",
   "./quemSouEu",
   "./tecnicas",
   "./static"
