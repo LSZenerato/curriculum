@@ -6,7 +6,7 @@ const urlsToCache = [
   "./index",
   "./quemSouEu",
   "./tecnicas",
-  "./static/next_logo"
+  "./static/next_logo.png"
 ];
 
 self.addEventListener("install", function (event) {
