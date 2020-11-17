@@ -14,7 +14,7 @@ export default function QuemSouEuPage() {
   const FirstSectionProps = {
     imgProps: {
       alt: 'minha foto',
-      src: 'https://media-exp1.licdn.com/dms/image/C4D03AQF1spmCFIqKCQ/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=-FBHP_dgSn_GguhjP-ad3JIq3abQe3FhYfx6cVvztFY'
+      src: '/static/avatar.webp'
     },
     titleProps: {
       children: 'Lucas Sacomani Zenerato'
