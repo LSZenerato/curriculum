@@ -35,11 +35,12 @@ export const Container = styled.div`
         text-align: center;
     }
 
-    .img_menu_round_div {
+    .button_class {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: ${props => props.theme.primary};
 
         width: 100px;
         height: 100px;
@@ -49,7 +50,7 @@ export const Container = styled.div`
         -moz-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
         box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
 
-        img {
+        .img_class {
             width: 100px;
             height: 100px;
             border-radius: 50%;

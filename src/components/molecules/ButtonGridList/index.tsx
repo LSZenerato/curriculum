@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
+import { Image, Button } from '../../atoms';
 
 interface Props {
   menuItems: Array<IDataArray>
@@ -18,13 +19,13 @@ const ButtonGridList: React.FC<Props> = ({ menuItems }) => {
           {
             menuItems.map((value, index) => {
               return <div className="item_div" key={index}>
-                <button 
+                <Button 
                   aria-label={value.title}
                   onClick={() => value.onClick()}
                   key={value.title + index} 
-                  className="img_menu_round_div">
-                    <img src={value.logo} alt={value.title} />
-                </button>
+                  className="button_class">
+                    <Image className="img_class" src={value.logo} alt={value.title}/>
+                </Button>
                 <h4>{value.title}</h4>
               </div>
             })
