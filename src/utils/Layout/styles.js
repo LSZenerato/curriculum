@@ -4,7 +4,7 @@ export const Container = styled.div`
     background: ${props => props.theme.primary};
     width: 100%;
     min-height: 100vh;
-    padding: 20px 0px;
+    padding: 5px 0px 75px 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -12,15 +12,15 @@ export const Container = styled.div`
     align-items: center;
 
     .next_button {
-        height: 75px;
-        width: 75px;
+        height: 70px;
+        width: 70px;
         border-radius: 50%;
         background: ${props => props.theme.quaternary};
-        margin: 10px 0;
-        /* position: fixed;
-        bottom: 10px;
+        position: fixed;
+        bottom: 5px;
         left: 50%;
-        transform: translate(-50%, 0); */
+        transform: translate(-50%, 0);
+        opacity: .75;
 
         .icon {
             font-size: 1.5rem;
@@ -29,6 +29,7 @@ export const Container = styled.div`
 
         :hover {
             cursor: pointer;
+            opacity: 1;
         }
     }
 `;

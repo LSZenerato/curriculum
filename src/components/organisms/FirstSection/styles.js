@@ -3,7 +3,6 @@ import { breakpoints } from '../../../utils';
 
 export const Container = styled.div`
   width: 100%;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
