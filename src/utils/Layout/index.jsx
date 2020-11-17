@@ -17,10 +17,12 @@ function Layout({children}) {
             case '/':
                 router.push('/tecnicas');
                 break;
-            case '/tecnicas':
-                router.push('/');
+            case '/home':
+                router.push('/tecnicas');
                 break;
-        
+            case '/tecnicas':
+                router.push('/home');
+                break;
             default:
                 break;
         }
