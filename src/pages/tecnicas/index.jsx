@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Tecnicas } from '../../components/templates';
-import { useRouter } from 'next/router';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -13,8 +12,6 @@ const Container = styled.div`
 `;
 
 export default function TecnicasPage() {
-  const router = useRouter();
-
   const SecondSectionProps = {
     titleProps: {
       children: 'Tecnicas utilizadas'
@@ -66,13 +63,13 @@ export default function TecnicasPage() {
     ]
   }
 
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      (success) => console.log('sucesso', success),
-      (error) => console.log('error', error),
-      {enableHighAccuracy: true}
-    );
-  }, []);
+  // useEffect(() => {
+  //   navigator.geolocation.getCurrentPosition(
+  //     (success) => console.log('sucesso', success),
+  //     (error) => console.log('error', error),
+  //     {enableHighAccuracy: true}
+  //   );
+  // }, []);
 
   return <Container>
     <Tecnicas SecondSectionProps={SecondSectionProps} />

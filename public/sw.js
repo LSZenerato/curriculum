@@ -1,4 +1,3 @@
-
 const CACHE_NAME = "cache_v1";
 const urlsToCache = [
   "./",
