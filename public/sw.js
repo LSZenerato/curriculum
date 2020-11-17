@@ -1,6 +1,13 @@
 
 const CACHE_NAME = "cache_v1";
-const urlsToCache = [];
+const urlsToCache = [
+  "/", 
+  "/index", 
+  "/offline",
+  "/quemSouEu",
+  "/tecnicas",
+  "/404",
+];
 
 self.addEventListener("install", function (event) {
   const preLoaded = caches.open(CACHE_NAME)
