@@ -25,6 +25,7 @@ export const Container = styled.div`
     // desktop 
     @media ${breakpoints.mobile} {
         width: 90%;
+        justify-content: right;
     }
 
     .h4_style {
