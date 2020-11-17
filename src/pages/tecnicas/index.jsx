@@ -14,42 +14,75 @@ const Container = styled.div`
 export default function TecnicasPage() {
   const SecondSectionProps = {
     titleProps: {
-      children: 'Tecnicas utilizadas'
+      children: 'Técnicas utilizadas'
     },
     textProps:{
-      children: 'Este site foi desenvolvido utilizando as tecnicas e tecnologias abaixo listadas'
+      children: 'Este site foi desenvolvido utilizando as técnicas, tecnologias e conceitos abaixo listados'
     },
     tecList: [
       {
         title: 'Next Js',
         logo: '/static/next_logo.webp',
-        onClick: () => alert('alow')
-      },
-      {
-        title: 'PWA',
-        logo: '/static/pwa.webp',
+        alt: 'Next Js',
         onClick: () => alert('alow')
       },
       {
         title: 'React Js',
         logo: '/static/react_logo.webp',
+        alt: 'React JS',
         onClick: () => alert('alow')
       },
       {
         title: 'Typescript',
         logo: '/static/typescript.webp',
+        alt: 'Typescript',
+        onClick: () => alert('alow')
+      },
+      {
+        title: 'Javascript',
+        logo: '/static/typescript.webp',
+        alt: 'Javascript',
+        onClick: () => alert('alow')
+      },
+      {
+        title: 'PWA',
+        logo: '/static/pwa.webp',
+        alt: 'PWA',
+        onClick: () => alert('alow')
+      },
+      {
+        title: 'Mobile First',
+        logo: '/static/pwa.webp',
+        alt: 'Mobile First',
+        onClick: () => alert('alow')
+      },
+      {
+        title: 'Acessibilidade',
+        logo: '/static/pwa.webp',
+        alt: 'Acessibilidade',
         onClick: () => alert('alow')
       },
     ]
   }
 
-  // useEffect(() => {
-  //   navigator.geolocation.getCurrentPosition(
-  //     (success) => console.log('sucesso', success),
-  //     (error) => console.log('error', error),
-  //     {enableHighAccuracy: true}
-  //   );
-  // }, []);
+  useEffect(async () => {
+    // if (
+    //   "mediaDevices" in navigator &&
+    //   "getUserMedia" in navigator.mediaDevices
+    // ) {
+    //   const video = document.querySelector("#video");
+    //   const videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
+    //   video.srcObject = videoStream;
+    //   video.play();
+
+    //   // put in html <video autoplay id="video"></video>
+    // }
+    // navigator.geolocation.getCurrentPosition(
+    //   (success) => console.log('sucesso', success),
+    //   (error) => console.log('error', error),
+    //   {enableHighAccuracy: true}
+    // );
+  }, []);
 
   return <Container>
     <Tecnicas SecondSectionProps={SecondSectionProps} />

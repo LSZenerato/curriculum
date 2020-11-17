@@ -23,7 +23,7 @@ const Transition = ({ children, location }) => {
   }
 
   return (
-    <TransitionGroup style={{ position: "relative" }}>
+    <TransitionGroup style={{ position: "relative", width: "100%" }}>
       <ReactTransition
         key={location}
         timeout={{ enter: TIMEOUT, exit: TIMEOUT }} >

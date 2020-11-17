@@ -7,8 +7,8 @@ function FirstSection({ props }) {
     const { imgProps, titleProps, textProps } = props;
 
     return <Container>
-        <Image src={imgProps.src} alt={imgProps.alt} />
-        <TitleDesc title={titleProps.children} desc={textProps.children} />
+        <Image className="image_style" src={imgProps.src} alt={imgProps.alt} />
+        <TitleDesc title={titleProps.children} desc={textProps.children} textAlign="right" alignItems="flex-end" />
     </Container>;
 }
 

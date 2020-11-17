@@ -5,40 +5,25 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
 
-  img {
+  .image_style {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     margin: 0 10px;
   }
 
-  .outside-div {
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: right;
-  }
-
   // desktop 
   @media ${breakpoints.mobile} {
     flex-direction: row;
-    width: 90%;
+    width: 100%;
 
-    img {
+    .image_style {
       height: 200px;
       width: 200px;
       margin: 20px;
-    }
-    
-    .outside-div {
-      width: 70%;
-      align-items: flex-end;
     }
   }
 `;

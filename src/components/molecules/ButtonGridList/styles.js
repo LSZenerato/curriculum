@@ -15,16 +15,15 @@ const bounce = keyframes`
 
 export const Container = styled.div`
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 20px;
     grid-row-gap: 20px;
     grid-column-gap: 50px;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
 
     // desktop 
     @media ${breakpoints.mobile} {
-        width: 90%;
         justify-content: right;
     }
 
@@ -36,44 +35,17 @@ export const Container = styled.div`
     .item_div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100%;
         width: 100%;
         color: white;
         text-align: center;
     }
-
-    .button_class {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: ${props => props.theme.primary};
-
+    
+    .img_class {
         width: 100px;
         height: 100px;
-        border-radius: 50%; 
-
-        -webkit-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
-        box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
-
-        .img_class {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-
-        :hover {
-            cursor: pointer;
-
-            transform: translateY(-15px);
-            animation: ${bounce} 3s infinite;
-            -webkit-animation: ${bounce} 3s infinite;
-            -moz-animation: ${bounce} 3s infinite;
-            -o-animation: ${bounce} 3s infinite;
-            transition-duration: 5s;
-            background-color: ${props => props.theme.quintenary};
-            color: ${props => props.theme.quintenaryTxt};
-        }
-    } 
+        border-radius: 50%;
+    }
 `;

@@ -5,11 +5,9 @@ export const H2 = styled.h2`
     position: relative;
     color: white;
     margin: 0;
-    width: 100%;
+    font-size: 1rem;
 
     @media ${breakpoints.mobile} {
-        h1 {
-            font-size: 4rem
-        }
+        font-size: 1.5rem
     }
 `;

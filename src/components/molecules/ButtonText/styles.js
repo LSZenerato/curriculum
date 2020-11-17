@@ -10,6 +10,17 @@ export const Container = styled.div`
     align-items: flex-start;
     text-align: left;
 
+    .text_class {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    .img_class {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
     .div_style {
         height: 3px;
         width: 40%;

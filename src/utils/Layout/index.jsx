@@ -18,9 +18,15 @@ function Layout({children}) {
                 router.push('/tecnicas');
                 break;
             case '/home':
+                router.push('/sobre');
+                break;
+            case '/sobre':
                 router.push('/tecnicas');
                 break;
             case '/tecnicas':
+                router.push('/contato');
+                break;
+            case '/contato':
                 router.push('/home');
                 break;
             default:

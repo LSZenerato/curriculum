@@ -1,7 +1,7 @@
 {
-  "short_name": "Next.js PWA",
-  "name": "Next.js PWA test APP",
-  "description": "It's the Next.js PWA test APP",
+  "short_name": "Currículo",
+  "name": "Currículo - Lucas S. Zenerato",
+  "description": "Site desenvolvido como currículo pessoal",
   "icons": [
     {
       "src": "/static/pwa.webp",
@@ -22,7 +22,7 @@
     }
   ],
   "dir": "ltr",
-  "lang": "en",
+  "lang": "pt",
   "start_url": "./",
   "orientation": "portrait",
   "display": "standalone",

@@ -9,7 +9,8 @@ interface Props {
 interface IDataArray { 
   title: string,
   onClick: () => void,
-  logo: string
+  logo: string,
+  alt: string
 }
 
 const ButtonGridList: React.FC<Props> = ({ menuItems }) => {
@@ -22,9 +23,8 @@ const ButtonGridList: React.FC<Props> = ({ menuItems }) => {
                 <Button 
                   aria-label={value.title}
                   onClick={() => value.onClick()}
-                  key={value.title + index} 
-                  className="button_class">
-                    <Image className="img_class" src={value.logo} alt={value.title}/>
+                  key={value.title + index} >
+                    <Image className="img_class" src={value.logo} alt={value.alt}/>
                 </Button>
                 <Text className="h4_style" >{value.title}</Text>
               </div>
@@ -39,16 +39,19 @@ ButtonGridList.defaultProps = {
     {
       title: 'Item 1',
       logo: 'src',
+      alt: 'alt',
       onClick: () => alert('sem função')
     },
     {
       title: 'Item 2',
       logo: 'src',
+      alt: 'alt',
       onClick: () => alert('sem função')
     },
     {
       title: 'Item 3',
       logo: 'src',
+      alt: 'alt',
       onClick: () => alert('sem função')
     },
   ]

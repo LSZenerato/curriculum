@@ -1,15 +1,42 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const bounce = keyframes`
+    0%, 10%, 40%, 80%, 100% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+`
 
 export const Button = styled.button`
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: ${props => props.theme.primary};
-    color: ${props => props.theme.text};
-    padding: 20px;
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: ${props => props.theme.primary};
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+
+    -webkit-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
+    box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
+
+    :hover {
+        cursor: pointer;
+
+        transform: translateY(-15px);
+        animation: ${bounce} 3s infinite;
+        -webkit-animation: ${bounce} 3s infinite;
+        -moz-animation: ${bounce} 3s infinite;
+        -o-animation: ${bounce} 3s infinite;
+        transition-duration: 5s;
+        background-color: ${props => props.theme.quintenary};
+        color: ${props => props.theme.quintenaryTxt};
+    }
 `;
