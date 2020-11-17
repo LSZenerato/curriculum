@@ -6,11 +6,7 @@ const urlsToCache = [
   "./index",
   "./quemSouEu",
   "./tecnicas",
-  "./manifest",
-  "./static/next_logo",
-  "./static/pwa",
-  "./static/react_logo",
-  "./static/typescript",
+  "./manifest"
 ];
 
 self.addEventListener("install", function (event) {
