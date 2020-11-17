@@ -15,7 +15,7 @@ const bounce = keyframes`
 
 export const Container = styled.div`
     width: 100%;
-    margin: 50px 0;
+    margin: 20px 0;
     grid-row-gap: 20px;
     grid-column-gap: 50px;
     display: grid;
