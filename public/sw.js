@@ -1,12 +1,7 @@
 const CACHE_NAME = "cache_v1";
 const urlsToCache = [
   "./",
-  "./offline",
-  "./index",
   "./onepage",
-  "./home",
-  "./tecnicas",
-  "./contato",
   "./manifest.json",
   "./static/avatar.webp",
   "./static/next_logo.webp",

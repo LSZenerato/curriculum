@@ -15,9 +15,7 @@ module.exports = {
     ) {
         return {
             '/': { page: '/onepage' },
-            '/home': { page: '/home' },
-            '/tecnicas': { page: '/tecnicas' },
-            '/contato': { page: '/contato' },
+            '/onepage': { page: '/onepage' },
         }
     }
 }
