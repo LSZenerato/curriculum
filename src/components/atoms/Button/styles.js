@@ -30,11 +30,11 @@ export const Button = styled.button`
     :hover {
         cursor: pointer;
 
-        transform: scale(1.2);
+        transform: scale(1.15);
         /* animation: ${bounce} 3s infinite;
         -webkit-animation: ${bounce} 3s infinite;
         -moz-animation: ${bounce} 3s infinite;
         -o-animation: ${bounce} 3s infinite; */
-        transition-duration: 2s;
+        transition-duration: 1s;
     }
 `;
