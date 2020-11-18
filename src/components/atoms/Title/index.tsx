@@ -1,5 +1,5 @@
 import React from 'react';
-import { H1, Div } from './styles';
+import { H1 } from './styles';
 
 const Title: React.FC<Props> = ({ children, ...props }) => {
   return <H1 {...props}>
