@@ -3,7 +3,7 @@ import { ThirdSection } from '../../organisms';
 
 function Contato({ ThirdSectionProps }) {
 
-  return <ThirdSection props={ThirdSectionProps} />
+  return <ThirdSection {...ThirdSectionProps} />
 }
 
 export default Contato;

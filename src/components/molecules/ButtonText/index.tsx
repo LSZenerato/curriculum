@@ -2,15 +2,11 @@ import React from 'react';
 import { Container } from './styles';
 import { Button, Text, Image } from '../../atoms';
 
-function ButtonText ({ desc, buttonProps, textAlign, alignItems }) {
+function ButtonText ({ textProps, buttonProps }) {
   
-  return <Container style={{ textAlign: textAlign, alignItems: alignItems }}>
-    <Text className="text_class" >{desc}</Text>
-    <Button 
-      aria-label={buttonProps.title}
-      onClick={() => buttonProps.onClick()} >
-        <Image className="img_class" src={buttonProps.src} alt={buttonProps.alt}/>
-    </Button>
+  return <Container>
+    <Text {...textProps} />
+    <Button {...buttonProps} />
   </Container>;
 }
 

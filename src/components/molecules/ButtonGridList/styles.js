@@ -1,18 +1,6 @@
 import styled, { keyframes } from "styled-components"
 import { breakpoints } from '../../../utils';
 
-const bounce = keyframes`
-    0%, 10%, 40%, 80%, 100% {
-        transform: translateY(0px);
-    }
-    20% {
-        transform: translateY(-30px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-`
-
 export const Container = styled.div`
     width: 100%;
     margin: 20px 20px;
@@ -20,17 +8,20 @@ export const Container = styled.div`
     grid-column-gap: 50px;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
 
     // desktop 
     @media ${breakpoints.mobile} {
-        justify-content: right;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+        justify-content: space-around;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
     }
 
     .h4_style {
         font-size: 1rem;
         margin-top: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     .item_div {
@@ -41,7 +32,6 @@ export const Container = styled.div`
         height: 100%;
         width: 100%;
         color: white;
-        text-align: center;
     }
     
     .img_class {

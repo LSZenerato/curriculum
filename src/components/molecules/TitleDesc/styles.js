@@ -10,15 +10,6 @@ export const Container = styled.div`
     align-items: flex-start;
     text-align: left;
 
-    .div_style {
-        height: 3px;
-        width: 40%;
-        background-color: ${props => props.theme.primary};
-        margin: 10px 0;
-        right: 0;
-        position: relative;
-    }
-
      // desktop 
     @media ${breakpoints.mobile} {
         padding: 20px 50px;
