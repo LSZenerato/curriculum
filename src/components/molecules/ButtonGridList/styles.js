@@ -20,11 +20,12 @@ export const Container = styled.div`
     grid-column-gap: 50px;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
 
     // desktop 
     @media ${breakpoints.mobile} {
         justify-content: right;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
     }
 
     .h4_style {
