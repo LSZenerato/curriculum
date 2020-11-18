@@ -25,7 +25,7 @@ export default function ContatoPage() {
       },
       list: [
         {
-          title: 'Linked In',
+          title: 'Linked In1',
           src: '/static/linkedin.png',
           alt: 'Linked In',
           onClick: () => alert('alow')
