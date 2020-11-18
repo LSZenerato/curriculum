@@ -1,27 +1,19 @@
 const lightTheme = {
-    primary: '#d3d3d3',
-    secondary: '#3f3f3f',
-    tertiary: '#707070',
-    quaternary: '#ffd700',
-    quintenary: '#ffed00',
-    primaryTxt: '#000',
-    secondaryTxt: '#fff',
-    tertiaryTxt: '#000',
-    quaternaryTxt: '#000',
-    quintenaryTxt: '#000',
+    primary: '#399cbd',
+    secondary: '#eeeeee',
+    tertiary: '#fff',
+    primaryTxt: '#fff',
+    secondaryTxt: '#1F2225',
+    tertiaryTxt: '#1F2225',
 }
 
 const darkTheme = {
-    primary: '#202020',
-    secondary: '#3f3f3f',
-    tertiary: '#707070',
-    quaternary: '#ffd700',
-    quintenary: '#ffed00',
+    primary: '#399cbd',
+    secondary: '#1F2225',
+    tertiary: '#383D43',
     primaryTxt: '#fff',
     secondaryTxt: '#fff',
-    tertiaryTxt: '#000',
-    quaternaryTxt: '#000',
-    quintenaryTxt: '#000',
+    tertiaryTxt: '#fff',
 }
   
 export default { lightTheme, darkTheme };

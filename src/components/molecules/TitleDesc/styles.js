@@ -13,7 +13,7 @@ export const Container = styled.div`
     .div_style {
         height: 3px;
         width: 40%;
-        background-color: ${props => props.theme.quaternary};
+        background-color: ${props => props.theme.primary};
         margin: 10px 0;
         right: 0;
         position: relative;

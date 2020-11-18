@@ -20,16 +20,7 @@ export const Container = styled.div`
         height: 100px;
         border-radius: 50%;
     }
-
-    .div_style {
-        height: 3px;
-        width: 40%;
-        background-color: ${props => props.theme.quaternary};
-        margin: 10px 0;
-        right: 0;
-        position: relative;
-    }
-
+    
      // desktop 
     @media ${breakpoints.mobile} {
         padding: 20px 50px;

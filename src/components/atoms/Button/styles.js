@@ -5,10 +5,10 @@ const bounce = keyframes`
         transform: translateY(0px);
     }
     20% {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
 `
 
@@ -17,7 +17,7 @@ export const Button = styled.button`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.primary};
+    background-color: ${props => props.theme.tertiary};
 
     width: 100px;
     height: 100px;
@@ -30,13 +30,11 @@ export const Button = styled.button`
     :hover {
         cursor: pointer;
 
-        transform: translateY(-15px);
-        animation: ${bounce} 3s infinite;
+        transform: scale(1.2);
+        /* animation: ${bounce} 3s infinite;
         -webkit-animation: ${bounce} 3s infinite;
         -moz-animation: ${bounce} 3s infinite;
-        -o-animation: ${bounce} 3s infinite;
-        transition-duration: 5s;
-        background-color: ${props => props.theme.quintenary};
-        color: ${props => props.theme.quintenaryTxt};
+        -o-animation: ${bounce} 3s infinite; */
+        transition-duration: 2s;
     }
 `;
