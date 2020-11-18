@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from './styles';
-import { Title, Text } from '../../atoms';
+import { Title, Text, DividerDiv } from '../../atoms';
 
-function TitleDesc({ title, desc, textAlign, alignItems }) {
+function TitleDesc({ titleProps, textProps, dividerDivProps }) {
   
-  return <Container style={{ textAlign: textAlign, alignItems: alignItems }}>
-    <Title>{title}</Title>
-    <div className="div_style" /> 
-    <Text>{desc}</Text>
+  return <Container>
+    <Title {...titleProps}/>
+    <DividerDiv {...dividerDivProps} /> 
+    <Text {...textProps}/>
   </Container>;
 }
 

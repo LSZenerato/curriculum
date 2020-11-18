@@ -11,4 +11,8 @@ interface Props extends React.HTMLProps<HTMLButtonElement> {
   children: any
 }
 
+Button.defaultProps = {
+  children: "Default button"
+}
+
 export default Button;

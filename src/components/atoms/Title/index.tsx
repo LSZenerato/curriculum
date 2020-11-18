@@ -1,12 +1,18 @@
 import React from 'react';
-import { H1 } from './styles';
+import { H1, Div } from './styles';
 
-const Title: React.FC<Props> = ({ children }) => {
-  return <H1>{children}</H1>;
+const Title: React.FC<Props> = ({ children, ...props }) => {
+  return <H1 {...props}>
+    {children}
+  </H1>;
 }
 
-interface Props {
-    children: any
+interface Props extends React.HTMLProps<HTMLHeadElement> {
+  children: any
+}
+
+Title.defaultProps = {
+  children: "Default title"
 }
 
 export default Title;

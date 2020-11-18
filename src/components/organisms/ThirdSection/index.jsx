@@ -2,12 +2,11 @@ import React from 'react';
 import { ButtonGridList, TitleDesc } from '../../molecules';
 import { Container } from './styles';
 
-function ThirdSection({ props }) {
-    const { titleProps, textProps, tecList } = props;
+function ThirdSection({ titleDescProps, buttonGridListProps, ...props }) {
 
-    return <Container>
-        <TitleDesc title={titleProps.children} desc={textProps.children} />
-        <ButtonGridList menuItems={tecList} />
+    return <Container {...props}>
+        <TitleDesc {...titleDescProps} />
+        <ButtonGridList {...buttonGridListProps} />
     </Container>;
 }
 

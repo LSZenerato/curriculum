@@ -3,7 +3,7 @@ import { FirstSection } from '../../organisms';
 
 function QuemSouEu({ FirstSectionProps }) {
 
-  return <FirstSection props={FirstSectionProps} />
+  return <FirstSection {...FirstSectionProps} />
 }
 
 export default QuemSouEu;

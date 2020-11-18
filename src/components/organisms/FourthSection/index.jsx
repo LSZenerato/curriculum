@@ -1,14 +1,13 @@
 import React from 'react';
-import { TitleDesc, ButtonText } from '../../molecules';
+import { ButtonGridList, TitleDesc } from '../../molecules';
 import { Container } from './styles';
 
-function FourthSection({ props }) {
-    const { titleDescProps, buttonTextProps } = props;
+function ThirdSection({ titleDescProps, buttonGridListProps, ...props }) {
 
-    return <Container>
-        <TitleDesc title={titleDescProps.title} desc={titleDescProps.desc} textAlign={titleDescProps.textAlign} alignItems={titleDescProps.alignItems} />
-        <ButtonText desc={buttonTextProps.desc} buttonProps={buttonTextProps.buttonProps} textAlign={buttonTextProps.textAlign} alignItems={buttonTextProps.alignItems} />
+    return <Container {...props}>
+        <TitleDesc {...titleDescProps} />
+        <ButtonGridList {...buttonGridListProps} />
     </Container>;
 }
 
-export default FourthSection;
+export default ThirdSection;

@@ -13,32 +13,47 @@ const Container = styled.div`
 
 export default function ContatoPage() {
   const ThirdSectionProps = {
-    titleProps: {
-      children: 'Contato'
-    },
-    textProps:{
-      children: 'Você pode me encontrar em:'
-    },
-    tecList: [
-      {
-        title: null,
-        logo: '/static/linkedin.png',
-        alt: 'Linked In',
-        onClick: () => alert('alow')
+    buttonGridListProps: {
+      buttonProps: {
+
       },
-      {
-        title: null,
-        logo: '/static/github.png',
-        alt: 'Github',
-        onClick: () => alert('alow')
+      imageProps: {
+
       },
-      {
-        title: null,
-        logo: '/static/email.png',
-        alt: 'Email',
-        onClick: () => alert('alow')
+      textProps: {
+
+      },
+      list: [
+        {
+          title: 'Linked In',
+          src: '/static/linkedin.png',
+          alt: 'Linked In',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Github',
+          src: '/static/github.png',
+          alt: 'Github',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Email',
+          src: '/static/email.png',
+          alt: 'Email',
+          onClick: () => alert('alow')
+        }
+      ]
+    },
+    titleDescProps: {
+      titleProps: {
+        children: 'Contato',
+      },
+      textProps:{
+        children: 'Você pode me encontrar em:',
+      },
+      dividerDivProps: {
       }
-    ]
+    }
   }
 
   return <Container>

@@ -13,15 +13,17 @@ const bounce = keyframes`
 `
 
 export const Button = styled.button`
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.tertiary};
 
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; 
+    background-color: ${props => props.theme.secondary};
+    color: ${props => props.theme.secondaryTxt};
 
     -webkit-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 13px 19px -1px rgba(0,0,0,0.75);
@@ -29,12 +31,11 @@ export const Button = styled.button`
 
     :hover {
         cursor: pointer;
-
-        transform: scale(1.15);
+        transform: scale(1.05);
+        transition-duration: 1s;
         /* animation: ${bounce} 3s infinite;
         -webkit-animation: ${bounce} 3s infinite;
         -moz-animation: ${bounce} 3s infinite;
         -o-animation: ${bounce} 3s infinite; */
-        transition-duration: 1s;
     }
 `;

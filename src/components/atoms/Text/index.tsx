@@ -9,4 +9,8 @@ interface Props extends React.HTMLProps<HTMLHeadingElement> {
     children: any
 }
 
+Text.defaultProps = {
+  children: "Default text"
+}
+
 export default Text;

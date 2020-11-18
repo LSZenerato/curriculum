@@ -13,56 +13,74 @@ const Container = styled.div`
 
 export default function TecnicasPage() {
   const SecondSectionProps = {
-    titleProps: {
-      children: 'Técnicas utilizadas'
+    buttonGridListProps: {
+      buttonProps: {
+
+      },
+      imageProps: {
+
+      },
+      textProps: {
+
+      },
+      list: [
+        {
+          title: 'Next Js',
+          src: '/static/next_logo.webp',
+          alt: 'Next Js',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'React Js',
+          src: '/static/react_logo.webp',
+          alt: 'React JS',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Typescript',
+          src: '/static/typescript.webp',
+          alt: 'Typescript',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Javascript',
+          src: '/static/typescript.webp',
+          alt: 'Javascript',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'PWA',
+          src: '/static/pwa.webp',
+          alt: 'PWA',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Mobile First',
+          src: '/static/pwa.webp',
+          alt: 'Mobile First',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Acessibilidade',
+          src: '/static/pwa.webp',
+          alt: 'Acessibilidade',
+          onClick: () => alert('alow')
+        },
+      ]
     },
-    textProps:{
-      children: 'Este site foi desenvolvido utilizando as técnicas, tecnologias e conceitos abaixo listados'
-    },
-    tecList: [
-      {
-        title: 'Next Js',
-        logo: '/static/next_logo.webp',
-        alt: 'Next Js',
-        onClick: () => alert('alow')
+    titleDescProps: {
+      titleProps: {
+        children: 'Técnicas utilizadas',
+        className: "ss_text_config",
       },
-      {
-        title: 'React Js',
-        logo: '/static/react_logo.webp',
-        alt: 'React JS',
-        onClick: () => alert('alow')
+      textProps:{
+        children: 'Este site foi desenvolvido utilizando as técnicas, tecnologias e conceitos abaixo listados',
+        className: "ss_text_config",
       },
-      {
-        title: 'Typescript',
-        logo: '/static/typescript.webp',
-        alt: 'Typescript',
-        onClick: () => alert('alow')
-      },
-      {
-        title: 'Javascript',
-        logo: '/static/typescript.webp',
-        alt: 'Javascript',
-        onClick: () => alert('alow')
-      },
-      {
-        title: 'PWA',
-        logo: '/static/pwa.webp',
-        alt: 'PWA',
-        onClick: () => alert('alow')
-      },
-      {
-        title: 'Mobile First',
-        logo: '/static/pwa.webp',
-        alt: 'Mobile First',
-        onClick: () => alert('alow')
-      },
-      {
-        title: 'Acessibilidade',
-        logo: '/static/pwa.webp',
-        alt: 'Acessibilidade',
-        onClick: () => alert('alow')
-      },
-    ]
+      dividerDivProps: {
+        className: "ss_divider_div_config"
+      }
+    }
   }
 
   useEffect(async () => {

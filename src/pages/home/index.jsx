@@ -12,15 +12,22 @@ const Container = styled.div`
 
 export default function QuemSouEuPage() {
   const FirstSectionProps = {
-    imgProps: {
+    titleDescProps: {
+      titleProps: {
+        children: "Lucas Sacomani Zenerato",
+        className: "title_class"
+      },
+      textProps: {
+        children: "Analista desenvolvedor de sistemas",
+        className: "title_class"
+      },
+      dividerDivProps: {
+        className: "div_class"
+      }
+    },
+    imageProps: {
       alt: 'minha foto',
       src: '/static/avatar.webp'
-    },
-    titleProps: {
-      children: 'Lucas Sacomani Zenerato'
-    },
-    textProps:{
-      children: 'Analista desenvolvedor de sistemas'
     }
   }
 

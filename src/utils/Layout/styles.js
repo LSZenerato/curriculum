@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background: ${props => props.theme.secondary};
-    /* background: linear-gradient(187deg, rgba(14,0,255,1) 55%, rgba(0,212,255,1) 55%, rgba(9,9,121,1) 55%); */
     width: 100%;
     min-height: 100vh;
-    padding: 5px 0px 75px 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
