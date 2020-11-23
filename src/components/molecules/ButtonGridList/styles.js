@@ -24,14 +24,16 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 100%;
         width: 100%;
         color: white;
+        padding: 0;
+        margin: 0;
     }
     
     .img_class {
-        width: 80px;
-        height: 80px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
     }
 
@@ -42,7 +44,7 @@ export const Container = styled.div`
         grid-row-gap: 20px;
         grid-column-gap: 50px;
 
-        .img_class {
+        .btn_class {
             width: 100px;
             height: 100px;
             border-radius: 50%;

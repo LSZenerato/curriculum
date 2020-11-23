@@ -13,9 +13,11 @@ const bounce = keyframes`
 `
 
 export const Button = styled.button`
+    border-radius: 50%;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    padding: 0;
+    margin: 0;
 
     display: flex;
     flex-direction: column;
@@ -33,6 +35,7 @@ export const Button = styled.button`
         cursor: pointer;
         transform: scale(1.05);
         transition-duration: 1s;
+        background-color: ${props => props.theme.primary};
         /* animation: ${bounce} 3s infinite;
         -webkit-animation: ${bounce} 3s infinite;
         -moz-animation: ${bounce} 3s infinite;

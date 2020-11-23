@@ -8,7 +8,7 @@ export const Div = styled.div`
     .divider_1_2 {
         width: 100%;
         height: 100px;
-        background: linear-gradient(-1deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.secondary} 50%);
+        background: linear-gradient(-1deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.primary} 50%);
     }
     .divider_2_3 {
         width: 100%;

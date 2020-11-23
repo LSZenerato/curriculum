@@ -9,14 +9,15 @@ export const Container = styled.div`
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.theme.secondary};
-  color: ${props => props.theme.secondaryTxt};
+  background-color: ${props => props.theme.primary};
+  color: ${props => props.theme.primaryTxt};
   text-decoration-color: ${props => props.theme.primary};
 
   // desktop 
   @media ${breakpoints.mobile} {
     flex-direction: row-reverse;
     width: 100%;
+    padding: 0 200px;
 
     .image_style {
       height: 200px;

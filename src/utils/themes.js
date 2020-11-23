@@ -1,14 +1,14 @@
 const lightTheme = {
-    primary: '#399cbd',
-    secondary: '#eeeeee',
-    tertiary: '#fff',
-    primaryTxt: '#fff',
+    primary: '#eead2d',
+    secondary: '#fff',
+    tertiary: '#eee',
+    primaryTxt: '#1F2225',
     secondaryTxt: '#1F2225',
     tertiaryTxt: '#1F2225',
 }
 
 const darkTheme = {
-    primary: '#399cbd',
+    primary: '#eead2d',
     secondary: '#1F2225',
     tertiary: '#383D43',
     primaryTxt: '#000',
