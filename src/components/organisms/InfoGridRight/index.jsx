@@ -5,7 +5,7 @@ import { Container } from './styles';
 function ThirdSection({ titleDescProps, buttonGridListProps, ...props }) {
 
     return <Container {...props}>
-        <TitleDesc {...titleDescProps} />
+        <TitleDesc align="right" {...titleDescProps} />
         <ButtonGridList {...buttonGridListProps} />
     </Container>;
 }

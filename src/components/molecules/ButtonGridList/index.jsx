@@ -7,12 +7,12 @@ function ButtonGridList({ list, buttonProps, imageProps, textProps }) {
     return (
         <Container>
           {
-            list.map((value, index) => {
+            list?.map((value, index) => {
               return <div className="item_div" key={index}>
                 <Button {...buttonProps} onClick={() => value.onClick()}>
                     <Image {...imageProps} className="img_class" src={value.src} alt={value.alt}/>
                 </Button>
-                <Text {...textProps} className="h4_style" children={value.title} />
+                {/* <Text {...textProps} className="h4_style" children={value.title} /> */}
               </div>
             })
           }

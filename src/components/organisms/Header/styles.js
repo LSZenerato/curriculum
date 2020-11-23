@@ -9,6 +9,9 @@ export const Container = styled.div`
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  background-color: ${props => props.theme.secondary};
+  color: ${props => props.theme.secondaryTxt};
+  text-decoration-color: ${props => props.theme.primary};
 
   // desktop 
   @media ${breakpoints.mobile} {

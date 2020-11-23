@@ -6,7 +6,7 @@ import { Container } from './styles';
 function FirstSection({ titleDescProps, imageProps, ...props }) {
 
     return <Container {...props}>
-        <TitleDesc {...titleDescProps} />
+        <TitleDesc align="left" {...titleDescProps} />
         <Image {...imageProps}/>
     </Container>;
 }

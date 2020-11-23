@@ -3,19 +3,14 @@ import { breakpoints } from '../../../utils';
 
 export const Container = styled.div`
     width: 100%;
-    margin: 20px 20px;
-    grid-row-gap: 20px;
-    grid-column-gap: 50px;
+    height: fit-content;
+    margin: 20px 0;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-
-    // desktop 
-    @media ${breakpoints.mobile} {
-        justify-content: space-around;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
-    }
+    grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 
     .h4_style {
         font-size: 1rem;
@@ -29,14 +24,28 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 100px;
         width: 100%;
         color: white;
     }
     
     .img_class {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
+    }
+
+    // desktop 
+    @media ${breakpoints.mobile} {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+
+        .img_class {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
     }
 `;

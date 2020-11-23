@@ -8,10 +8,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: ${props => props.theme.tertiary};
-  
+  background-color: ${props => props.theme.primary};
+  color: ${props => props.theme.primaryTxt};
+
   @media ${breakpoints.mobile} {
     flex-direction: row;
+    align-items: center;
   }
 `;

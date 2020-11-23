@@ -2,23 +2,46 @@ import { OnePage } from '../../components/templates';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .ss_text_config {
+        text-align: left;
+    }
+    .ss_divider_div_config {
+        justify-content: flex-start;
+    }
+
+    .ts_text_config {
+        text-align: right;
+    }
+    .ts_divider_div_config {
+        justify-content: flex-end;
+    }
+
+    .fs_text_config {
+        text-align: right;
+        color: ${props => props.theme.primaryTxt};
+    }
+    .fs_divider_div_config {
+        justify-content: flex-end;
+        background-color: ${props => props.theme.primaryTxt};
+    }
 `;
 
 export default function OnePagePage() {
-  const HeaderProps = {
+  const FirstSectionProps = {
     titleDescProps: {
       titleProps: {
-        children: "Lucas Sacomanis Zenerato",
+        children: "Indna Ribeiro Simeão",
         className: "title_class"
       },
       textProps: {
-        children: "Analista desenvolvedor de sistemas",
+        children: "Médica veterinária",
         className: "title_class"
       },
       dividerDivProps: {
@@ -27,10 +50,10 @@ export default function OnePagePage() {
     },
     imageProps: {
       alt: 'minha foto',
-      src: '/static/avatar.webp'
+      src: ''
     }
   }
-  const InfoGridRightProps = {
+  const SecondSectionProps = {
     buttonGridListProps: {
       buttonProps: {
 
@@ -88,16 +111,19 @@ export default function OnePagePage() {
     },
     titleDescProps: {
       titleProps: {
-        children: 'Técnicas utilizadas'
+        children: 'Técnicas utilizadas',
+        className: "ss_text_config",
       },
       textProps:{
-        children: 'Este site foi desenvolvido utilizando as técnicas, tecnologias e conceitos abaixo listados'
+        children: 'Este site foi desenvolvido utilizando as técnicas, tecnologias e conceitos abaixo listados',
+        className: "ss_text_config",
       },
       dividerDivProps: {
+        className: "ss_divider_div_config"
       }
     }
   }
-  const InfoGridLeftProps = {
+  const ThirdSectionProps = {
     buttonGridListProps: {
       buttonProps: {
 
@@ -131,21 +157,21 @@ export default function OnePagePage() {
     },
     titleDescProps: {
       titleProps: {
-        children: 'Contato'
+        children: 'Contato',
+        className: "ts_text_config"
       },
       textProps:{
-        children: 'Você pode me encontrar em:'
+        children: 'Você pode me encontrar em:',
+        className: "ts_text_config"
       },
       dividerDivProps: {
+        className: "ts_divider_div_config"
       }
     }
   }
 
 
   return <Container>
-    <OnePage 
-      HeaderProps={HeaderProps} 
-      InfoGridRightProps={InfoGridRightProps} 
-      InfoGridLeftProps={InfoGridLeftProps} />
+    <OnePage />
   </Container>
 }

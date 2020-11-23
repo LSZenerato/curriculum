@@ -5,11 +5,10 @@ export const H1 = styled.h1`
     width: 100%;
     margin: 0;
     font-size: 2.5rem;
-    color: ${props => props.theme.secondaryTxt};
-    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
 
     @media ${breakpoints.mobile} {
         font-size: 3.5rem;
-        text-align: left;
     }
 `;

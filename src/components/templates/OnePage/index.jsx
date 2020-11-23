@@ -1,25 +1,24 @@
 import React from 'react';
-import { FirstSection, SecondSection, ThirdSection, FourthSection } from '../../organisms';
+import { Header, InfoGridLeft, InfoGridRight } from '../../organisms';
 import { SectionDivider } from '../../atoms';
 import { FaArrowDown } from 'react-icons/fa';
 
-function OnePage({ FirstSectionProps, SecondSectionProps, ThirdSectionProps, FourthSectionProps }) {
+function OnePage({ HeaderProps, InfoGridRightProps, InfoGridLeftProps }) {
   function nextSection() {
     
   }
 
   return <>
-    <FirstSection id="first_section"  {...FirstSectionProps} />
+    <Header id="first_section"  {...HeaderProps} />
     <SectionDivider type={1} />
-    <SecondSection id="second_section" {...SecondSectionProps} />
+    <InfoGridRight id="second_section" {...InfoGridRightProps} />
     <SectionDivider type={2} />
-    <FourthSection id="third_section"  {...FourthSectionProps} />
-    <ThirdSection id="third_section"  {...ThirdSectionProps} />
-    <button aria-label="Avançar" className="next_button" onClick={() => nextSection()}>
+    <InfoGridLeft id="third_section"  {...InfoGridLeftProps} />
+    {/* <button aria-label="Avançar" className="next_button" onClick={() => nextSection()}>
       <a href="#second_section">
         <FaArrowDown />
       </a>
-    </button>
+    </button> */}
   </>;
 }
 

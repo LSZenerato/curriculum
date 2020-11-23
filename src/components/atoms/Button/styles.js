@@ -13,8 +13,8 @@ const bounce = keyframes`
 `
 
 export const Button = styled.button`
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 
     display: flex;

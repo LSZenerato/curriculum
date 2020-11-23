@@ -7,11 +7,13 @@ export const Container = styled.div`
   padding: 50px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: ${props => props.theme.primary};
-  align-items: center;
+  justify-content: center;
+  background-color: ${props => props.theme.tertiary};
+  color: ${props => props.theme.tertiaryTxt};
+  text-decoration-color: ${props => props.theme.primary};
 
   @media ${breakpoints.mobile} {
     flex-direction: row-reverse;
+    align-items: center;
   }
 `;
