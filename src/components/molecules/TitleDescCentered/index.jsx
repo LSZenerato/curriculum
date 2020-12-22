@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 import { Title, Text, DividerDiv } from '../../atoms';
 
-function TitleDesc({ titleProps, textProps}){
+function TitleDescCommon({ titleProps, textProps}){
 
   return <Container>
     <Title className="title_style" {...titleProps}/>
@@ -10,4 +10,4 @@ function TitleDesc({ titleProps, textProps}){
   </Container>;
 }
 
-export default TitleDesc;
+export default TitleDescCommon;

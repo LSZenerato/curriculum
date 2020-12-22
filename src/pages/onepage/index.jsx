@@ -1,5 +1,6 @@
 import { OnePage } from '../../components/templates';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const Container = styled.div`
   width: 100%;
@@ -10,27 +11,77 @@ const Container = styled.div`
   align-items: center;
 `;
 
-export default function OnePagePage() {
+export default function HomePage() {
+  const router = useRouter();
+
   const HeaderProps = {
     titleDescProps: {
       titleProps: {
-        children: "Lucas Sacomanis Zenerato",
-        className: "title_class"
+        children: "Olá, bem vindo ao meu currículo!"
       },
       textProps: {
-        children: "Analista desenvolvedor de sistemas",
-        className: "title_class"
-      },
-      dividerDivProps: {
-        className: "div_class"
+        children: "Site em React Js desenvolvido 100% por mim."
       }
-    },
-    imageProps: {
-      alt: 'minha foto',
-      src: '/static/avatar.webp'
     }
   }
-  const InfoGridRightProps = {
+  const AboutProps = {
+    AvatarDescProps: {
+      imageProps: {
+        alt: 'minha foto',
+        src: '/static/avatar.webp'
+      },
+      titleProps: {
+        children: "Quem sou eu?"
+      },
+      textProps: {
+        children: "Meu nome é Lucas Sacomani Zenerato, sou formado em Ciências da Computação e atuo como desenvolvedor front-end e back-end. Atualmente (2021) tenho aproximadamente 3 anos de experiência e sou apaixonado pelo que faço."
+      }
+    }
+  }
+  const MoreProps = {
+    buttonGridListProps: {
+      buttonProps: {
+
+      },
+      imageProps: {
+
+      },
+      textProps: {
+
+      },
+      list: [
+        {
+          title: 'Linked In',
+          src: '/static/linkedin.png',
+          alt: 'Linked In',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Github',
+          src: '/static/github.png',
+          alt: 'Github',
+          onClick: () => alert('alow')
+        },
+        {
+          title: 'Email',
+          src: '/static/email.png',
+          alt: 'Email',
+          onClick: () => alert('alow')
+        }
+      ]
+    },
+    titleDescProps: {
+      titleProps: {
+        children: 'Quer saber mais sobre mim?'
+      },
+      textProps:{
+        children: 'Dê uma olhada e fale comigo! Você pode me encontrar em:'
+      },
+      dividerDivProps: {
+      }
+    }
+  }
+  const TechnologiesProps = {
     buttonGridListProps: {
       buttonProps: {
 
@@ -97,55 +148,13 @@ export default function OnePagePage() {
       }
     }
   }
-  const InfoGridLeftProps = {
-    buttonGridListProps: {
-      buttonProps: {
-
-      },
-      imageProps: {
-
-      },
-      textProps: {
-
-      },
-      list: [
-        {
-          title: 'Linked In',
-          src: '/static/linkedin.png',
-          alt: 'Linked In',
-          onClick: () => alert('alow')
-        },
-        {
-          title: 'Github',
-          src: '/static/github.png',
-          alt: 'Github',
-          onClick: () => alert('alow')
-        },
-        {
-          title: 'Email',
-          src: '/static/email.png',
-          alt: 'Email',
-          onClick: () => alert('alow')
-        }
-      ]
-    },
-    titleDescProps: {
-      titleProps: {
-        children: 'Contato'
-      },
-      textProps:{
-        children: 'Você pode me encontrar em:'
-      },
-      dividerDivProps: {
-      }
-    }
-  }
-
 
   return <Container>
     <OnePage 
-      HeaderProps={HeaderProps} 
-      InfoGridRightProps={InfoGridRightProps} 
-      InfoGridLeftProps={InfoGridLeftProps} />
+      HeaderProps={HeaderProps}
+      AboutProps={AboutProps}
+      MoreProps={MoreProps}
+      TechnologiesProps={TechnologiesProps}
+       />
   </Container>
 }

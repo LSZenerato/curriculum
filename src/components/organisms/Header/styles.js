@@ -4,25 +4,17 @@ import { breakpoints } from '../../../utils';
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding: 50px 0;
+  padding: 10px 0;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: ${props => props.theme.primary};
-  color: ${props => props.theme.primaryTxt};
-  text-decoration-color: ${props => props.theme.primary};
+  background-image: url("https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80");
 
   // desktop 
   @media ${breakpoints.mobile} {
-    flex-direction: row-reverse;
+    padding: 50px 0;
     width: 100%;
-    padding: 0 200px;
-
-    .image_style {
-      height: 200px;
-      width: 200px;
-      margin: 20px;
-    }
   }
 `;

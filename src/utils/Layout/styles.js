@@ -9,26 +9,4 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .next_button {
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        background: ${props => props.theme.primary};
-        color: ${props => props.theme.primaryTxt};
-        position: fixed;
-        bottom: 5px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        opacity: .75;
-
-        .icon {
-            font-size: 1.5rem;
-        }
-
-        :hover {
-            cursor: pointer;
-            opacity: 1;
-        }
-    }
 `;

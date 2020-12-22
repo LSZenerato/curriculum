@@ -9,28 +9,28 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #00000024;
+    padding: 10px;
 
     .title_style {
-        font-size: 3rem;
-        color: ${props => props.theme.primary};
+        font-size: 2rem;
+        margin: 10px 0;
         text-decoration: none;
     }
 
     .desc_style {
-        font-size: 1.5rem;
-        color: ${props => props.theme.primary};
+        font-size: 1.2rem;
+        margin: 10px 0;
         text-decoration: none;
     }
 
     // desktop 
     @media ${breakpoints.mobile} {
-        padding: 20px 50px;
-        align-items: right;
-        text-align: right;
-
         .title_style {
-            font-size: 4rem;
+            font-size: 2.5rem;
+        }
+
+        .desc_style {
+            font-size: 1.5rem;
         }
     }
 `;
