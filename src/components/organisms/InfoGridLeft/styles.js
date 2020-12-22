@@ -8,8 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${props => props.theme.primary};
-  color: ${props => props.theme.primaryTxt};
+  background-color: ${props => props.theme.secondary};
 
   @media ${breakpoints.mobile} {
     flex-direction: row;

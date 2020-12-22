@@ -1,11 +1,11 @@
 import React from 'react';
-import { Image, Title } from '../../atoms';
+import { TitleDesc } from '../../molecules';
 import { Container } from './styles';
 
-function Header({ titleProps }) {
+function Header({ titleDescProps }) {
 
     return <Container>
-        <Title className="title_style" children={titleProps.children} />
+        <TitleDesc {...titleDescProps} />
     </Container>;
 }
 

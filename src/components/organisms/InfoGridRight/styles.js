@@ -9,11 +9,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: ${props => props.theme.tertiary};
-  color: ${props => props.theme.tertiaryTxt};
-  text-decoration-color: ${props => props.theme.primary};
 
   @media ${breakpoints.mobile} {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
   }
 `;

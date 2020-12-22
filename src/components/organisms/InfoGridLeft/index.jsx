@@ -1,13 +1,13 @@
 import React from 'react';
-import { ButtonGridList, TitleDesc } from '../../molecules';
+import { ButtonGridList, TitleDescLeft } from '../../molecules';
 import { Container } from './styles';
 
-function ThirdSection({ titleDescProps, buttonGridListProps, ...props }) {
+function InfoGridLeft({ titleDescProps, buttonGridListProps }) {
 
-    return <Container {...props}>
-        <TitleDesc align="left" {...titleDescProps} />
+    return <Container>
+        <TitleDescLeft {...titleDescProps} />
         <ButtonGridList {...buttonGridListProps} />
     </Container>;
 }
 
-export default ThirdSection;
+export default InfoGridLeft;

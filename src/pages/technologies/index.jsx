@@ -1,4 +1,4 @@
-import { OnePage } from '../../components/templates';
+import { InfoGridRight } from '../../components/organisms';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -10,27 +10,7 @@ const Container = styled.div`
   align-items: center;
 `;
 
-export default function OnePagePage() {
-  const HeaderProps = {
-    titleProps: {
-      children: "Lucas Sacomanis Zenerato",
-    }
-  }
-  const AboutProps = {
-    AvatarDescProps: {
-      imageProps: {
-        alt: 'minha foto',
-        src: '/static/avatar.webp'
-      },
-      titleProps: {
-        children: "Quem sou eu?"
-      },
-      textProps: {
-        children: "Meu nome é Lucas Sacomani Zenerato, sou formado em Ciências da Computação e atuo como desenvolvedor front-end e back-end. Atualmente (2021) tenho aproximadamente 3 anos de experiência e sou apaixonado pelo que faço."
-      }
-    }
-  }
-
+export default function TechnologiesPage() {
   const InfoGridRightProps = {
     buttonGridListProps: {
       buttonProps: {
@@ -98,56 +78,8 @@ export default function OnePagePage() {
       }
     }
   }
-  const InfoGridLeftProps = {
-    buttonGridListProps: {
-      buttonProps: {
-
-      },
-      imageProps: {
-
-      },
-      textProps: {
-
-      },
-      list: [
-        {
-          title: 'Linked In',
-          src: '/static/linkedin.png',
-          alt: 'Linked In',
-          onClick: () => alert('alow')
-        },
-        {
-          title: 'Github',
-          src: '/static/github.png',
-          alt: 'Github',
-          onClick: () => alert('alow')
-        },
-        {
-          title: 'Email',
-          src: '/static/email.png',
-          alt: 'Email',
-          onClick: () => alert('alow')
-        }
-      ]
-    },
-    titleDescProps: {
-      titleProps: {
-        children: 'Contato'
-      },
-      textProps:{
-        children: 'Você pode me encontrar em:'
-      },
-      dividerDivProps: {
-      }
-    }
-  }
-
 
   return <Container>
-    <OnePage 
-      HeaderProps={HeaderProps} 
-      AboutProps={AboutProps}
-      InfoGridRightProps={InfoGridRightProps} 
-      InfoGridLeftProps={InfoGridLeftProps} />
+    <InfoGridRight {...InfoGridRightProps} />
   </Container>
 }

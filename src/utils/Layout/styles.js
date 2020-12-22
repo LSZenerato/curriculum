@@ -10,17 +10,22 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
+    .buttons_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 5px;
+    }
+
     .next_button {
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        background: ${props => props.theme.primary};
-        color: ${props => props.theme.primaryTxt};
-        position: fixed;
-        bottom: 5px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        opacity: .75;
+        margin: 0 10px;
+        background: ${props => props.theme.secondary};
+        color: ${props => props.theme.secondaryTxt};
 
         .icon {
             font-size: 1.5rem;
