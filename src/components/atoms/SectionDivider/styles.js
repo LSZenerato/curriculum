@@ -8,16 +8,31 @@ export const Div = styled.div`
     .divider_1_2 {
         width: 100%;
         height: 100px;
+        background: linear-gradient(2deg, ${props => props.theme.secondary} 44%, ${props => props.theme.primary} 50%);
+    }
+    .divider_1_3 {
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(2deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.primary} 50%);
+    }
+    .divider_2_1 {
+        width: 100%;
+        height: 100px;
         background: linear-gradient(-1deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.primary} 50%);
     }
     .divider_2_3 {
         width: 100%;
         height: 100px;
-        background: linear-gradient(1deg, ${props => props.theme.primary} 44%, ${props => props.theme.tertiary} 50%);
+        background: linear-gradient(-1deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.primary} 50%);
     }
-    .divider_3_4 {
+    .divider_3_1 {
         width: 100%;
         height: 100px;
-        background: linear-gradient(-1deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.secondary} 50%);
+        background: linear-gradient(-2deg, ${props => props.theme.primary} 44%, ${props => props.theme.tertiary} 50%);
+    }
+    .divider_3_2 {
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(-2deg, ${props => props.theme.tertiary} 44%, ${props => props.theme.primary} 50%);
     }
 `;

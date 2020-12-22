@@ -3,7 +3,6 @@ import { breakpoints } from '../../../utils';
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 800px;
     height: fit-content;
     margin: 20px 0;
     display: grid;

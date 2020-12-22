@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-height: 100vh;
   padding: 10px 0;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: ${props => props.theme.primary};
@@ -14,7 +14,6 @@ export const Container = styled.div`
 
   // desktop 
   @media ${breakpoints.mobile} {
-    flex-direction: row;
     padding: 50px 0;
     width: 100%;
   }

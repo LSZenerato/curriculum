@@ -38,7 +38,7 @@ function Layout({children}) {
 
         switch (pathname) {
             case '/technologies': 
-                router.push('/more');
+                href
                 break;
             case '/more': 
                 router.push('/about');
@@ -59,10 +59,6 @@ function Layout({children}) {
             <Transition location={router.pathname}>
                 {children}
             </Transition>
-            <div className="buttons_div">
-                <Button onClick={() => previousRoute()} className="next_button" children="Voltar" />
-                <Button onClick={() => nextRoute()} className="next_button" children="Avançar" />
-            </div>
         </Container>
     </ThemeProvider>
 }
