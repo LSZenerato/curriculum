@@ -12,24 +12,25 @@ const Container = styled.div`
 
 export default function OnePagePage() {
   const HeaderProps = {
-    titleDescProps: {
-      titleProps: {
-        children: "Lucas Sacomanis Zenerato",
-        className: "title_class"
-      },
-      textProps: {
-        children: "Analista desenvolvedor de sistemas",
-        className: "title_class"
-      },
-      dividerDivProps: {
-        className: "div_class"
-      }
-    },
-    imageProps: {
-      alt: 'minha foto',
-      src: '/static/avatar.webp'
+    titleProps: {
+      children: "Lucas Sacomanis Zenerato",
     }
   }
+  const AboutProps = {
+    AvatarDescProps: {
+      imageProps: {
+        alt: 'minha foto',
+        src: '/static/avatar.webp'
+      },
+      titleProps: {
+        children: "Quem sou eu?"
+      },
+      textProps: {
+        children: "Meu nome é Lucas Sacomani Zenerato, sou formado em Ciências da Computação e atuo como desenvolvedor front-end e back-end. Atualmente (2021) tenho aproximadamente 3 anos de experiência e sou apaixonado pelo que faço."
+      }
+    }
+  }
+
   const InfoGridRightProps = {
     buttonGridListProps: {
       buttonProps: {
@@ -145,6 +146,7 @@ export default function OnePagePage() {
   return <Container>
     <OnePage 
       HeaderProps={HeaderProps} 
+      AboutProps={AboutProps}
       InfoGridRightProps={InfoGridRightProps} 
       InfoGridLeftProps={InfoGridLeftProps} />
   </Container>

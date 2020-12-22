@@ -1,14 +1,12 @@
 import React from 'react';
-import { TitleDesc } from '../../molecules';
-import { Image } from '../../atoms';
+import { Image, Title } from '../../atoms';
 import { Container } from './styles';
 
-function FirstSection({ titleDescProps, imageProps, ...props }) {
+function Header({ titleProps }) {
 
-    return <Container {...props}>
-        <TitleDesc align="left" {...titleDescProps} />
-        <Image {...imageProps}/>
+    return <Container>
+        <Title className="title_style" children={titleProps.children} />
     </Container>;
 }
 
-export default FirstSection;
+export default Header;

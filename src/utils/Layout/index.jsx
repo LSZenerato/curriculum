@@ -9,7 +9,7 @@ import Transition from '../Transition/transition';
 function Layout({children}) {
     const router = useRouter();
     const themeLightUp = useSelector(state => state.theme.light);
-    const theme = !themeLightUp ? themes.darkTheme : themes.lightTheme;
+    const theme = themes.lightTheme;
 
     return <ThemeProvider theme={theme}>
         <Container>
