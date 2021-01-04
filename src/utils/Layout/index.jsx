@@ -12,48 +12,6 @@ function Layout({children}) {
     const themeLightUp = useSelector(state => state.theme.light);
     const theme = themes.lightTheme;
 
-    const nextRoute = () => {
-        const pathname = router.pathname;
-
-        switch (pathname) {
-            case '/home': 
-                router.push('/about');
-                break;
-            case '/about': 
-                router.push('/more');
-                break;
-            case '/more': 
-                router.push('/technologies');
-                break;
-            case '/technologies': 
-                router.push('/home');
-                break;
-            default:
-                break;
-        }
-    }
-
-    const previousRoute = () => {
-        const pathname = router.pathname;
-
-        switch (pathname) {
-            case '/technologies': 
-                href
-                break;
-            case '/more': 
-                router.push('/about');
-                break;
-            case '/about': 
-                router.push('/home');
-                break;
-            case '/home': 
-                router.push('/technologies');
-                break;
-            default:
-                break;
-        }
-    }
-
     return <ThemeProvider theme={theme}>
         <Container>
             <Transition location={router.pathname}>

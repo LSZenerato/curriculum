@@ -2,9 +2,9 @@ import React from 'react';
 import { AvatarDesc } from '../../molecules';
 import { Container } from './styles';
 
-function About({ AvatarDescProps }) {
+function About({ AvatarDescProps, section }) {
 
-    return <Container >
+    return <Container id={section} >
         <AvatarDesc {...AvatarDescProps} />
     </Container>;
 }

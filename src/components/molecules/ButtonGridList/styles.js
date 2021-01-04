@@ -10,7 +10,7 @@ export const Container = styled.div`
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
     grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-column-gap: 40px;
 
     .h4_style {
         font-size: 1rem;
