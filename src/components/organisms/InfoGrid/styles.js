@@ -8,13 +8,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${props => 
-    props.style === "primary" ? props.theme.primary
-    : props.style === "secondary" ? props.theme.secondary
-    : props.theme.tertiary};
-  color: ${props => 
-    props.style === "primary" ? props.theme.primaryTxt
-    : props.style === "secondary" ? props.theme.secondaryTxt
-    : props.theme.tertiaryTxt};
+  ${props => props.style === "primary" && `background-color: ${props.theme.primary}; color: ${props.theme.primaryTxt};`};
+  ${props => props.style === "secondary" && `background-color: ${props.theme.secondary}; color: ${props.theme.secondaryTxt};`};
+  ${props => props.style === "tertiary" && `background-color: ${props.theme.tertiary}; color: ${props.theme.tertiaryTxt};`};
   align-items: center;
 `;

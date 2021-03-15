@@ -7,7 +7,7 @@ export const H1 = styled.h1`
     font-size: 2.5rem;
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: ${props => props.theme.primary};
+    text-decoration-color: ${props => props.theme.secondary};
 
     @media ${breakpoints.mobile} {
         font-size: 3.5rem;

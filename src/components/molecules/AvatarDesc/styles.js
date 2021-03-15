@@ -9,7 +9,6 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: ${props => props.theme.primary};
 
     .desc-div {
         padding: 10px 5px;
@@ -18,14 +17,12 @@ export const Container = styled.div`
 
     .title-style {
         font-size: 2.5rem;
-        margin-bottom: 5px;
-        color: ${props => props.theme.primaryTxt};
+        margin-bottom: 10px;
     }
     
     .desc-style {
         font-size: 1.2rem;
         margin: 0;
-        color: ${props => props.theme.primaryTxt};
     }
 
     // desktop 

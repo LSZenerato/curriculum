@@ -1,4 +1,5 @@
 import { OnePage } from '../../components/templates';
+import { InfoGrid } from '../../components/organisms';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 
@@ -149,12 +150,12 @@ export default function HomePage() {
     }
   }
 
-  return <Container>
+  return <>
     <OnePage 
       HeaderProps={HeaderProps}
       AboutProps={AboutProps}
       MoreProps={MoreProps}
       TechnologiesProps={TechnologiesProps}
        />
-  </Container>
+  </>
 }

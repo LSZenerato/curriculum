@@ -32,15 +32,14 @@ function OnePage({ HeaderProps, AboutProps, MoreProps, TechnologiesProps }) {
 
   return <>
     <Header section="header_section" {...HeaderProps} />
-    <About section="about_section" {...AboutProps} />  
-    <SectionDivider type={13} />
-    <SectionDivider type={31} />
-    <InfoGrid style="primary" section="tech_section" {...TechnologiesProps} />
-    <SectionDivider type={12} />
-    <InfoGrid style="secondary" section="more_section"  {...MoreProps} />
+    <About section="about_section" style="tertiary" {...AboutProps} />  
+    <InfoGrid section="tech_section" style="primary" {...TechnologiesProps} />
+    <InfoGrid section="more_section" style="secondary" {...MoreProps} />
     <Button onClick={() => nextRoute()} children={<FaArrowDown />} />
   </>;
 }
 
-    {/* <SectionDivider type={2} /> */}
+{/* <SectionDivider type={13} />
+<SectionDivider type={31} />
+<SectionDivider type={12} /> */}
 export default OnePage;

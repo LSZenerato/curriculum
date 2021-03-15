@@ -7,9 +7,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${props => props.theme.primary};
-  color: ${props => props.theme.primaryTxt};
-
+  ${props => props.style === "primary" && `background-color: ${props.theme.primary}; color: ${props.theme.primaryTxt}; `};
+  ${props => props.style === "secondary" && `background-color: ${props.theme.secondary}; color: ${props.theme.secondaryTxt};`};
+  ${props => props.style === "tertiary" && `background-color: ${props.theme.tertiary}; color: ${props.theme.tertiaryTxt};`};
   @media ${breakpoints.mobile} {
     flex-direction: row;
     align-items: center;

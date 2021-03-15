@@ -1,10 +1,10 @@
 const lightTheme = {
     primary: '#fdfdfd',
     secondary: '#05386B',
-    tertiary: '#266db5',
+    tertiary: '#ddd',
     primaryTxt: '#1F2225',
-    secondaryTxt: '#EDF5E1',
-    tertiaryTxt: '#000',
+    secondaryTxt: '#fff',
+    tertiaryTxt: '#1F2225',
 }
 
 const darkTheme = {
